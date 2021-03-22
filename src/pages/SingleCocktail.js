@@ -2,6 +2,10 @@ import React from "react";
 import Loading from "../components/Loading";
 import { useParams, Link } from "react-router-dom";
 
+const outputStuff = (obj) => {
+  return `${obj.drinks[0].strIngredient1} ${obj.drinks[0].strMeasure1}`;
+};
+
 export default function SingleCocktail() {
   const { id } = useParams();
   const [loading, setLoading] = React.useState(false);
@@ -15,6 +19,10 @@ export default function SingleCocktail() {
           `https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${id}`
         );
         const data = await response.json();
+        // console.log(
+        //   `${data.drinks[0].strIngredient1} ${data.drinks[0].strMeasure1}`,
+        //   "this is measure"
+        // );
         if (data.drinks) {
           const {
             strDrink: name,
@@ -92,19 +100,19 @@ export default function SingleCocktail() {
               <span className="drink-data">info: </span> {info}
             </p>
             <p>
-              <span className="drink-data">glass: </span> {glass}
+              *<span className="drink-data">glass: </span> {glass}
             </p>
             <p>
               <span className="drink-data">instructions: </span> {instructions}
             </p>
             <div>
-              <span className="drink-data">ingredients: </span>
+              <span className="drink-data">{outputStuff(data.drinks[0])} </span>
 
-              <ul>
+              {/* <ul>
                 {ingredients.map((ingredient, index) => {
                   return ingredient ? <li key={index}>{ingredient}</li> : null;
                 })}
-              </ul>
+              </ul> */}
             </div>
           </div>
         </div>
