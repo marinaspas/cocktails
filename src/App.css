@@ -10,10 +10,15 @@ ul {
 a {
   text-decoration: none;
 }
+.logo {
+  background: rgba(255, 255, 255, 0.5);
+}
 .logo h1 {
-  font-family: "Baloo Bhaina 2", cursive;
-  color: blue;
+  font-family: "Noto Serif", serif;
+  font-weight: 700;
+  color: #2a2a2a;
   font-size: 35px;
+  line-height: 125px;
 }
 .logo a {
   text-decoration: none;

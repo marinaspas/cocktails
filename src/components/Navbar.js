@@ -8,11 +8,6 @@ const Navbar = () => {
       <div className="nav-center">
         <div className="logo">
           <Link to="/">
-            <img
-              src={logo}
-              alt="logo for cocktails db site"
-              className="logo-icon"
-            />
             <h1>Cocktail Database</h1>
           </Link>
         </div>
