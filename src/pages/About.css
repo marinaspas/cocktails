@@ -1,0 +1,16 @@
+.about-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.about-section p {
+  margin-bottom: 20px;
+}
+.about-img {
+  width: 500px;
+}
+.about-wrapper {
+  display: flex;
+}
+.about-content {
+  padding-left: 40px;
+}

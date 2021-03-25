@@ -7,21 +7,20 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="nav-center">
         <div className="logo">
-          <Link to="/">
-            <img
-              src={logo}
-              alt="logo for cocktails db site"
-              className="logo-icon"
-            />
+          <Link to="/" exact="true">
             <h1>Cocktail Database</h1>
           </Link>
         </div>
         <ul className="nav-list">
           <li className="nav-link">
-            <Link to="/">Home</Link>
+            <Link to="/" exact="true" className="nav-text">
+              Home
+            </Link>
           </li>
           <li className="nav-link">
-            <Link to="/about">About</Link>
+            <Link to="/about" className="nav-text">
+              About
+            </Link>
           </li>
         </ul>
       </div>
