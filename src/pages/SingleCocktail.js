@@ -1,10 +1,11 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import Loading from "../components/Loading";
+import "./SingleCocktail.css";
 
 const getIngredients = (ingredients, measures) => {
   return (
-    <ul>
+    <ul className="ingredients-list">
       {ingredients.map((ingredient) => {
         console.log(ingredient, "this is an ingredient");
         return (
@@ -95,33 +96,47 @@ export default function SingleCocktail() {
 
   return (
     <section className="section cocktail-section">
-      <Link to="/" className="btn btn-primary">
-        back home
-      </Link>
+      <div className="btn-wrap">
+        <Link to="/" className="btn btn-primary">
+          back
+        </Link>
+      </div>
       <h2 className="section-title">{name}</h2>
       <div className="drink">
         <img src={image} alt={name} className="drink-img" />
         <div className="drink-info">
-          <p>
-            <span className="drink-data">name: </span> {name}
-          </p>
-          <p>
-            <span className="drink-data">category: </span> {category}
-          </p>
-          <p>
-            <span className="drink-data">info: </span> {info}
-          </p>
-          <p>
-            <span className="drink-data">glass: </span> {glass}
-          </p>
-          <p>
-            <span className="drink-data">instructions: </span> {instructions}
-          </p>
-          <div>
-            <span className="drink-data">
-              ingredients: {getIngredients(ingredients)}
-            </span>
-          </div>
+          <ul>
+            <li className="drink-list-item">
+              <p>
+                <span className="drink-data">name: </span> {name}
+              </p>
+            </li>
+            <li className="drink-list-item">
+              <p>
+                <span className="drink-data">category: </span> {category}
+              </p>
+            </li>
+            <li className="drink-list-item">
+              <p>
+                <span className="drink-data">info: </span> {info}
+              </p>
+            </li>
+            <li className="drink-list-item">
+              <p>
+                <span className="drink-data">glass: </span> {glass}
+              </p>
+            </li>
+            <li className="drink-list-item">
+              <p>
+                <span className="drink-data">instructions: </span>{" "}
+                {instructions}
+              </p>
+            </li>
+            <li className="drink-list-item">
+              <span className="drink-data">ingredients:</span>
+              {getIngredients(ingredients)}
+            </li>
+          </ul>
         </div>
       </div>
     </section>

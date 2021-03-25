@@ -23,7 +23,7 @@ export default function CocktailList() {
     );
   }
   return (
-    <section className="section">
+    <section className="section cocktails-tiles">
       <h2 className="section-title">Cocktails</h2>
       <div className="cocktails-wrapper">
         {cocktails.map((item) => {

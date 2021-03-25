@@ -1,0 +1,24 @@
+.error-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.error-title {
+  font-size: 35px;
+  font-weight: 700;
+  font-family: "Noto Serif", serif;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.center {
+  display: flex;
+  justify-content: center;
+}
+.glass-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.glass-wrap img {
+  width: 300px;
+}
