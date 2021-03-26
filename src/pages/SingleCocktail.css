@@ -1,6 +1,7 @@
 .cocktail-section {
   max-width: 1100px;
   margin: 0 auto;
+  margin-bottom: 40px;
 }
 .drink-img {
   width: 500px;
