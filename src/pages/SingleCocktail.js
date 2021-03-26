@@ -7,7 +7,6 @@ const getIngredients = (ingredients, measures) => {
   return (
     <ul className="ingredients-list">
       {ingredients.map((ingredient) => {
-        console.log(ingredient, "this is an ingredient");
         return (
           <li key={ingredient.ingredient}>
             {ingredient.measure ? `${ingredient.measure} of ` : ""}

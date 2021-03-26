@@ -35,3 +35,24 @@
   width: 60px;
   height: 60px;
 }
+@media only screen and (max-width: 800px) {
+  .navbar {
+    justify-content: center;
+    height: 100%;
+    padding-bottom: 20px;
+  }
+  .nav-center {
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: center;
+  }
+  .nav-list {
+    margin-left: 0;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 30px;
+  }
+  .nav-text {
+    font-size: 24px;
+  }
+}
