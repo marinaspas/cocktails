@@ -1,6 +1,5 @@
 .cocktail {
   box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.5);
-  /* margin-bottom: 20px; */
   border-radius: 4px;
 }
 .cocktail-tile-img {
@@ -16,6 +15,10 @@
   grid-column-gap: 15px;
   grid-row-gap: 15px;
   grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+}
+.cocktails-wrapper .cocktail-link:only-child {
+  max-width: 330px;
+  margin: 0 auto;
 }
 .cocktail-details {
   padding: 10px;

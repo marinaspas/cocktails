@@ -22,3 +22,30 @@
 .glass-wrap img {
   width: 300px;
 }
+@media only screen and (max-width: 765px) {
+  .error-container .btn-primary {
+    width: 200px;
+    font-size: 20px;
+  }
+  .error-title {
+    padding: 0 15px;
+    margin-bottom: 20px;
+  }
+  .glass-wrap img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-device-width: 1024px) {
+  .error-container .btn-primary {
+    width: 200px;
+    font-size: 20px;
+  }
+  .glass-wrap img {
+    width: 400px;
+    height: 100%;
+  }
+  .error-container {
+    margin-bottom: 40px;
+  }
+}
