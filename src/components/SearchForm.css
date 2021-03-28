@@ -22,3 +22,8 @@
   border: 1px solid #e3dcdc;
   font-size: 18px;
 }
+@media screen and (max-width: 360px) {
+  .form-control {
+    width: 100%;
+  }
+}

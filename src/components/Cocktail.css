@@ -48,6 +48,21 @@
 .cocktails-tiles {
   margin-bottom: 30px;
 }
+
+@media only screen and (max-width: 640px) {
+  .cocktails-wrapper {
+    max-width: none;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .cocktail {
+    width: 250px;
+  }
+  .cocktail-section .section-title {
+    font-size: 25px;
+  }
+}
 @media only screen and (max-width: 765px) {
   .cocktails-wrapper {
     max-width: none;
@@ -56,16 +71,4 @@
   .cocktail {
     margin-right: 0;
   }
-}
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  /* .cocktail-link:nth-of-type(2n) .cocktail {
-    margin-right: 0px;
-  }
-  .cocktails-wrapper {
-    max-width: none;
-    justify-content: center;
-  }
-  .cocktail-link:nth-of-type(3n) .cocktail {
-    margin-right: 20px;
-  } */
 }
